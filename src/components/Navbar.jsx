@@ -46,7 +46,7 @@ const Navbar = () => {
             </a>
 
             {/* Nav Items For Large Devices */}
-            <ul className="md:flex space-x-12 hidden">
+            <ul className="md:flex space-x-12 cursor-pointer hidden">
                 {navItems.map(({ link, path }) => (
                 <ScrollLink
                     to={path}
