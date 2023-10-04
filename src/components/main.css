@@ -305,9 +305,140 @@
 }
     
 
+/*=============== Services Section =================*/
+.service-container{
+    max-width: 1380px;
+    margin: 5rem auto;
+}
+.service-container .title{
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--h-text-color);
+    position: relative;
+    width: 26rem;
+    margin-bottom: 45px;
+    text-align: left;
+}
+.service-container .title::before{
+    position: absolute;
+    content: 'Services';
+    font-size: 4.2rem;
+    left: 0;
+    top: -1.4rem;
+    text-align: left;
+    color: #eae9e9;
+    z-index: -10;
+}
+.service-container .content{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.service-container .content .imageBox:nth-child(1){
+    grid-column: span 8;
+}
+.service-container .content .imageBox{
+    position: relative;
+    grid-column: span 4;
+    border-radius: 7px;
+    height: 400px;
+    margin-bottom: .6rem;
+}
+.service-container .content .imageBox::after{
+    position: absolute;
+    content: '';
+    background-color: #18191f57;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    border-radius: 7px;
+}
+.service-container .content .imageBox:nth-child(7){
+    grid-column: span 8;
+}
+.service-container .content .imageBox img{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+.service-container .content .imageBox h3{
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--white);
+    z-index: 1000;
+}
 
 
+@media (max-width: 800px){
+    .service-container .content .imageBox:nth-child(1){
+        grid-column: span 12;
+        height: 380px;
+    }
+    .service-container .content .imageBox,
+    .service-container .content .imageBox:nth-child(7){
+        grid-column: span 6;
+        height: 380px;
+    }
+}
 
+@media (max-width: 600px){
+    .service-container .content{
+        gap: .6rem;
+    }
+    .service-container .content .imageBox,
+    .service-container .content .imageBox:nth-child(1),
+    .service-container .content .imageBox:nth-child(7){
+        height: 330px;
+        margin-bottom: .4rem;
+    }
+    .service-container .content .imageBox h3{
+        bottom: 1.3rem;
+        left: 1.3rem;
+        font-size: 1.2rem;
+    }
+    .service-container .title{
+        font-size: 2.5rem;
+        width: 100%;
+        margin-bottom: 45px;
+        text-align: left;
+        
+    }
+    .service-container .title::before{
+        font-size: 3.4rem;
+        left: 0;
+        top: -1rem;
+    }
+}
+
+@media (max-width: 468px){
+    .service-container .content .imageBox,
+    .service-container .content .imageBox:nth-child(1),
+    .service-container .content .imageBox:nth-child(7){
+        grid-column: span 12;
+        height: 300px;
+        margin-bottom: .2rem;
+    }
+}
+
+@media (max-width: 400px){
+    .service-container .title{
+        font-size: 2rem;
+        margin-bottom: 40px;
+        text-align: left;
+        
+    }
+    .service-container .title::before{
+        font-size: 2.8rem;
+        left: 0;
+        top: -1rem;
+    }
+}
 
 
 
