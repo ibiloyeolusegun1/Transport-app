@@ -568,6 +568,110 @@
 
 
 
+/*=============== Contact Section =================*/
+.contact{
+    background-color: var(--h-text-color);
+    color: var(--semi-white);
+}
+.contact-container{
+    max-width: 1380px;
+    margin: 5rem auto;
+}
+.contact-container .form-container{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    gap: 4rem;
+    padding: 5rem 0;
+}
+.contact-container .form-container form{
+    width: 100%;
+}
+.contact-container .form-container form .form-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .8rem;
+}
+.contact-container .form-container form .box,
+.contact-container .form-container form .form-box .box{
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: transparent;
+    padding-top: 8px;
+    font-size: .8rem;
+    height: 2.2rem;
+    border-top: 0;
+    border-top: 0;
+    border-top: 0;
+    border-bottom: 1px solid var(--body-grey);
+    outline: none;
+    color: var(--semi-white);
+}
+.contact-container .form-container form textarea{
+    resize: none;
+}
+.contact-container .form-container form .form-box select{
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+}
+.contact-container .form-container form .form-box select option{
+    background-color: var(--h-text-color);
+    width: fit-content;
+    /* outline: none;
+    border: none;
+    padding: 10px; */
+}
+.contact-container .form-container .content{
+    width: 100%;
+    margin-top: .6rem;
+}
+.contact-container .form-container .content h1{
+    color: var(--white);
+    font-size: 3rem;
+    font-weight: 700;
+}
+.contact-container .form-container .content p{
+    color: var(--semi-white);
+    font-size: .987rem;
+}
+
+@media (max-width: 1150px){
+    .contact-container .form-container{
+        gap: 2rem;
+    }
+    .contact-container .form-container .content h1{
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 950px){
+    .contact-container .form-container{
+        flex-direction: column-reverse;
+    }
+}
+@media (max-width: 600px){
+    .contact-container .form-container form .form-box{
+        flex-direction: column;
+        gap: 0;
+    }
+    .contact-container .form-container .content h1{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 378px){
+    .contact-container .form-container .content h1{
+        font-size: 1.6rem;
+    }
+}
+
+
+
+
+
+
+
+
 
 
 
