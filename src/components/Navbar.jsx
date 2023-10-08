@@ -80,7 +80,7 @@ const Navbar = () => {
         </div>
 
         {/* Nav item for mobile device */}
-        <div className={`space-y-4 px-4 mt-16 py-14 bg-brandPrimary ${ isMenuOpen ? "block fixed top-0 left-0 right-0" : "hidden"}`}>
+        <div className={`space-y-4 px-4 mt-16 py-7 bg-brandPrimary ${ isMenuOpen ? "block fixed top-0 left-0 right-0" : "hidden"}`}>
             {navItems.map(({ link, path }) => (
                 <ScrollLink
                     to={path}
