@@ -6,6 +6,12 @@ function App() {
   return (
     <>
       <Navbar/>
+      <Hero/>
+      <About/>
+      <Services/>
+      <Testimonial/>
+      <Contact/>
+      <Footer/>
     </>
   )
 }
