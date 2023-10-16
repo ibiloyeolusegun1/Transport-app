@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+:root{
+    --primary: #1a57e6;
+    --white: #f8f1f1;
+    --semi-white: #ebe8e8;
+    --text-color: #4d4d4d;
+    --body-grey: #717171;
+    --h-text-color: #18191f;
+    --shadow: 0px 23px 21px -8px rgba(136, 160, 255, 0.25);
+}
+
+.btn{
+    background-color: var(--primary);
+    color: var(--white);
+    padding: .7rem 1.3rem;
+    font-size: .765rem;
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: var(--h-text-color);
+}
+
+
+/*=============== Hero Section =================*/
+.hero{
+    background: linear-gradient(145deg, #000066, #FFFFFF);
+    width: 100%;
+    height: 88vh; 
+}
+.hero-container{
+    max-width: 1380px;
+    margin: 5rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 82vh;
+    width: 100%;
+}
+.hero-container .content{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    border: 1px solid var(--body-grey);
+    border-radius: 20px;
+    padding: 20px 30px;
+    height: 65vh;
+    width: 100%;
+}
+.hero-container .content .detail{
+    grid-column: span 6;
+}
+.hero-container .content .detail span{
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: .532rem;
+    letter-spacing: 2px;
+}
+.hero-container .content .detail h1{
+    font-size: 3rem;
+    color: var(--white);
+    font-weight: 600;
+    line-height: 1.1;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.hero-container .content .detail p{
+    width: 30rem;
+    color: var(--semi-white);
+    font-size: .9rem;
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
+.hero-container .content .detail .search{
+    width: 30rem;
+}
+.hero-container .content .detail .search input{
+    width: 60%;
+    padding: .8rem .9rem;
+    font-size: .765rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    outline: none;
+}
+.hero-container .content .detail .search .btn-search{
+    background-color: var(--primary);
+    color: var(--white);
+    padding: .8rem .9rem;
+    font-size: .765rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.hero-container .content .image{
+    grid-column: span 6;
+}
+
+
+
+
+@media (max-width: 1170px){
+    .hero-container .content{
+        gap: 3rem;
+    }
+    .hero-container .content .detail h1{
+        font-size: 2.5rem;
+    }
+    .hero-container .content .detail .search,
+    .hero-container .content .detail p{
+        width: 27rem;
+    }
+    
+}
+
+@media (max-width: 1000px){
+    .hero,
+    .hero-container{
+        height: 100vh;
+    }
+    .hero-container .content{
+        gap: 2rem;
+    }
+    .hero-container .content{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+        width: 100%;
+    }
+    .hero-container .content .detail p{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    .hero-container .content{
+        border: none;
+        padding: 0 2px;
+    }
+}
+
+@media (max-width: 520px){
+    .hero-container .content .detail .search{
+        width: 100%;
+    }
+    .hero-container .content .detail .search input{
+        width: 70%;
+    }
+    .hero-container .content .detail h1{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 420px){
+    .hero-container .content .detail .search input{
+        width: 70%;
+        padding: .7rem .8rem;
+        font-size: .665rem;
+    }
+    .hero-container .content .detail h1{
+        font-size: 1.8rem;
+    }
+    .hero-container .content .detail .search .btn-search{
+        padding: .7rem .8rem;
+        font-size: .665rem;
+    }
+
+}
+@media (max-width: 420px){
+    .hero-container .content .detail .search input{
+        width: 60%;
+        padding: .7rem .8rem;
+        font-size: .665rem;
+    }
+    .hero-container .content .detail h1{
+        font-size: 1.6rem;
+    }
+    .hero-container .content .detail .search .btn-search{
+        padding: .7rem .8rem;
+        font-size: .665rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*======== General Media Queries =========*/
+@media (min-width: 1536px) {
+    .inner-w{
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 640px), (min-width: 300px) {
+    .padding{
+        padding: 1rem;
+    }
+}
+@media (min-width: 1280px), (min-width: 768px) {
+    .padding{
+        padding: 2rem;
+    }
+}
